@@ -1,0 +1,20 @@
+<div class="container p-5 bg-white">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let book of books">
+      <div class="card mb-3 ">
+        <img class="card-img-top" [src]="book.Image" alt="Card image cap">
+        <div class="card-body">
+          <h6 class="card-title">Titre : {{ book.Titre }}</h6>
+          <h6 class="card-title">Auteur : {{ book.Auteur }}</h6>
+          <h6 class="card-title">Quantite : {{ book.Quantite }}</h6>
+          <h6 class="card-title">Categorie : {{ book.Categorie }}</h6>
+          <button type="button" class=" col-12 btn btn-success" (click)="booking(book.idLivre)">
+            Emprunter
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class=" d-flex flex-column justify-content-center align-items-center vh-100">
+  <div class="col-6"> <!-- Set width to 50% -->
+    <div class="container mt-3">
+      <form  class=" d-flex mb flex-column justify-content-center align-items-center">
+          <label class=" col-12" for="userId"> Id d'utilisateur</label>
+          <input type="text" class="form-control mb-3"  disabled [ngModel]="userId" name="userId">
+
+          <label class=" col-12" for="bookId"> Id de livre</label>
+          <input type="text" class="form-control mb-3"  disabled [ngModel]="bookId" name="bookId">
+
+        <input type="date" class="form-control mb-3" (change)="onDateSelected($event)">
+
+
+        <button class="btn btn-primary col-12"  (click)="onSubmit()" >Emprunter</button>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+

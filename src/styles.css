@@ -1,0 +1,11 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+.custom-row {
+}
+.mycard{
+  height: 400px;
+}
+
+.card-img-top {
+  height: 200px;
+
+}
